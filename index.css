@@ -21,11 +21,87 @@ html {
     left: 219px;
 }
 
-.app__button {
+.app__button-3 {
+    top: 107px;
+    left: 1px;
     width: 216px;
     height: 104px;
+    position: absolute;
     border: none;
     background-color: #3779cb;
+    overflow: hidden;
+
+}
+.app__button-4 {
+    top: 107px;
+    left: 220.9px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+    overflow: hidden;
+
+}
+
+.app__button-5 {
+    top: 0px;
+    left: 1px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+    overflow: hidden;
+
+}
+
+.app__button-6 {
+    top: 0px;
+    left: 220.9px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+    overflow: hidden;
+
+}
+
+.app__button-7 {
+    bottom: -320px;
+    left: 1px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+    overflow: hidden;
+
+}
+
+.app__button-8 {
+    bottom: -320px;
+    left: 220.9px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+    overflow: hidden;
+
+}
+
+.app__button-0 {
+    top: 0px;
+    left: 0px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+    overflow: hidden;
+
 }
 
 .app__button-1 {
@@ -36,6 +112,8 @@ html {
     position: absolute;
     border: none;
     background-color: #3779cb;
+    overflow: hidden;
+
 }
 
 .app__button-2 {
@@ -46,10 +124,15 @@ html {
     top: 215px;
     border: none;
     background-color: #3779cb;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .app__go {
     cursor: pointer;
+    font-size: 50px;
+    color: white;
+    font-style: italic;
 }
 /* Modal */
 
@@ -61,7 +144,6 @@ html {
     left: 0;
     top: 0;
     opacity: 0.4;
-    display: none;
 }
 
 .modal__main {
@@ -75,7 +157,6 @@ html {
     top: 215px;
     position: absolute;
     font-size: 20px;
-    display: none;
 }
 
 .modal__button {
@@ -118,4 +199,13 @@ html {
 
 .or {
     margin-top: 10px;
+}
+
+/* Variables */
+.close {
+    display: none !important;
+}
+
+.close1 {
+    display: none !important;
 }
