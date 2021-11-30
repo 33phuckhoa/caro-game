@@ -5,6 +5,52 @@ html {
     height: 100%;
 }
 
+.app {
+    width: 655px;
+    height: 317px;
+    background-color: white;
+    position: absolute;
+    left: 516px;
+    top: 235px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.app__btn {
+    position: absolute;
+    left: 219px;
+}
+
+.app__button {
+    width: 216px;
+    height: 104px;
+    border: none;
+    background-color: #3779cb;
+}
+
+.app__button-1 {
+    top: 107px;
+    left: -219px;
+    width: 216px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #3779cb;
+}
+
+.app__button-2 {
+    position: absolute;
+    width: 216px;
+    height: 105px;
+    left: -219px;
+    top: 215px;
+    border: none;
+    background-color: #3779cb;
+}
+
+.app__go {
+    cursor: pointer;
+}
 /* Modal */
 
 .modal {
