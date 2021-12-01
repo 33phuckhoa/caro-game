@@ -65,60 +65,104 @@ const player = (check) => {
 player()
 
 const isVictory = () => {
-    if(button[0].innerHTML === 'X' && button[5].innerHTML === 'X' && button[6].innerHTML === 'X')
+    //Tick X
+    if((button[0].innerHTML === 'X' && button[5].innerHTML === 'X' && button[6].innerHTML === 'X') 
+    || (button[6].innerHTML === 'X' && button[5].innerHTML === 'X' && button[0].innerHTML === 'X') 
+    || (button[5].innerHTML === 'X' && button[6].innerHTML === 'X' && button[0].innerHTML === 'X')
+    || (button[5].innerHTML === 'X' && button[0].innerHTML === 'X' && button[6].innerHTML === 'X'))
     {
         alert("Victory")
     }
-    else if(button[0].innerHTML === 'X' && button[1].innerHTML === 'X' && button[2].innerHTML === 'X') {
+    else if(button[0].innerHTML === 'X' && button[1].innerHTML === 'X' && button[2].innerHTML === 'X'
+    || (button[2].innerHTML === 'X' && button[1].innerHTML === 'X' && button[0].innerHTML === 'X')
+    || (button[1].innerHTML === 'X' && button[0].innerHTML === 'X' && button[2].innerHTML === 'X')
+    || (button[1].innerHTML === 'X' && button[2].innerHTML === 'X' && button[0].innerHTML === 'X')) {
         alert("Victory")       
     }
-    else if(button[2].innerHTML === 'X' && button[7].innerHTML === 'X' && button[8].innerHTML === 'X') {
+    else if((button[2].innerHTML === 'X' && button[7].innerHTML === 'X' && button[8].innerHTML === 'X')
+    || (button[8].innerHTML === 'X' && button[7].innerHTML === 'X' && button[2].innerHTML === 'X')
+    || (button[7].innerHTML === 'X' && button[8].innerHTML === 'X' && button[2].innerHTML === 'X')
+    || (button[7].innerHTML === 'X' && button[2].innerHTML === 'X' && button[8].innerHTML === 'X')) {
         alert("Victory")
     }
-    else if(button[6].innerHTML === 'X' && button[4].innerHTML === 'X' && button[8].innerHTML === 'X') {
+    else if((button[6].innerHTML === 'X' && button[4].innerHTML === 'X' && button[8].innerHTML === 'X')
+    || (button[8].innerHTML === 'X' && button[4].innerHTML === 'X' && button[6].innerHTML === 'X')
+    || (button[4].innerHTML === 'X' && button[8].innerHTML === 'X' && button[6].innerHTML === 'X')
+    || (button[4].innerHTML === 'X' && button[6].innerHTML === 'X' && button[8].innerHTML === 'X')) {
         alert("Victory")
     }
-    else if(button[1].innerHTML === 'X' && button[3].innerHTML === 'X' && button[4].innerHTML === 'X') {
+    else if((button[1].innerHTML === 'X' && button[3].innerHTML === 'X' && button[4].innerHTML === 'X')
+    || (button[4].innerHTML === 'X' && button[3].innerHTML === 'X' && button[1].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[1].innerHTML === 'X' && button[4].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[4].innerHTML === 'X' && button[1].innerHTML === 'X')) {
         alert("Victory")
     }
-    else if(button[5].innerHTML === 'X' && button[3].innerHTML === 'X' && button[7].innerHTML === 'X') {
+    else if((button[5].innerHTML === 'X' && button[3].innerHTML === 'X' && button[7].innerHTML === 'X')
+    || (button[7].innerHTML === 'X' && button[3].innerHTML === 'X' && button[5].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[7].innerHTML === 'X' && button[5].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[5].innerHTML === 'X' && button[7].innerHTML === 'X')) {
         alert("Victory")
     }
-    else if(button[0].innerHTML === 'X' && button[7].innerHTML === 'X' && button[8].innerHTML === 'X') {
+    else if((button[0].innerHTML === 'X' && button[3].innerHTML === 'X' && button[8].innerHTML === 'X')
+    || (button[8].innerHTML === 'X' && button[3].innerHTML === 'X' && button[0].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[0].innerHTML === 'X' && button[8].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[8].innerHTML === 'X' && button[0].innerHTML === 'X')) {
         alert("Victory")
     }
-    else if(button[0].innerHTML === 'X' && button[5].innerHTML === 'X' && button[6].innerHTML === 'X') {
+    else if((button[6].innerHTML === 'X' && button[3].innerHTML === 'X' && button[2].innerHTML === 'X')
+    || (button[2].innerHTML === 'X' && button[3].innerHTML === 'X' && button[6].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[2].innerHTML === 'X' && button[6].innerHTML === 'X')
+    || (button[3].innerHTML === 'X' && button[6].innerHTML === 'X' && button[2].innerHTML === 'X')) {
         alert("Victory")
     }
-    else if(button[6].innerHTML === 'X' && button[3].innerHTML === 'X' && button[2].innerHTML === 'X') {
-        alert("Victory")
-    }
-    if(button[0].innerHTML === 'O' && button[5].innerHTML === 'O' && button[6].innerHTML === 'O')
+    //Tick O
+    if((button[0].innerHTML === 'O' && button[5].innerHTML === 'O' && button[6].innerHTML === 'O') 
+    || (button[6].innerHTML === 'O' && button[5].innerHTML === 'O' && button[0].innerHTML === 'O') 
+    || (button[5].innerHTML === 'O' && button[6].innerHTML === 'O' && button[0].innerHTML === 'O')
+    || (button[5].innerHTML === 'O' && button[0].innerHTML === 'O' && button[6].innerHTML === 'O'))
     {
         alert("Victory")
     }
-    else if(button[0].innerHTML === 'O' && button[1].innerHTML === 'O' && button[2].innerHTML === 'O') {
+    else if(button[0].innerHTML === 'O' && button[1].innerHTML === 'O' && button[2].innerHTML === 'O'
+    || (button[2].innerHTML === 'O' && button[1].innerHTML === 'O' && button[0].innerHTML === 'O')
+    || (button[1].innerHTML === 'O' && button[0].innerHTML === 'O' && button[2].innerHTML === 'O')
+    || (button[1].innerHTML === 'O' && button[2].innerHTML === 'O' && button[0].innerHTML === 'O')) {
         alert("Victory")       
     }
-    else if(button[2].innerHTML === 'O' && button[7].innerHTML === 'O' && button[8].innerHTML === 'O') {
+    else if((button[2].innerHTML === 'O' && button[7].innerHTML === 'O' && button[8].innerHTML === 'O')
+    || (button[8].innerHTML === 'O' && button[7].innerHTML === 'O' && button[2].innerHTML === 'O')
+    || (button[7].innerHTML === 'O' && button[8].innerHTML === 'O' && button[2].innerHTML === 'O')
+    || (button[7].innerHTML === 'O' && button[2].innerHTML === 'O' && button[8].innerHTML === 'O')) {
         alert("Victory")
     }
-    else if(button[6].innerHTML === 'O' && button[4].innerHTML === 'O' && button[8].innerHTML === 'O') {
+    else if((button[6].innerHTML === 'O' && button[4].innerHTML === 'O' && button[8].innerHTML === 'O')
+    || (button[8].innerHTML === 'O' && button[4].innerHTML === 'O' && button[6].innerHTML === 'O')
+    || (button[4].innerHTML === 'O' && button[8].innerHTML === 'O' && button[6].innerHTML === 'O')
+    || (button[4].innerHTML === 'O' && button[6].innerHTML === 'O' && button[8].innerHTML === 'O')) {
         alert("Victory")
     }
-    else if(button[1].innerHTML === 'O' && button[3].innerHTML === 'O' && button[4].innerHTML === 'O') {
+    else if((button[1].innerHTML === 'O' && button[3].innerHTML === 'O' && button[4].innerHTML === 'O')
+    || (button[4].innerHTML === 'O' && button[3].innerHTML === 'O' && button[1].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[1].innerHTML === 'O' && button[4].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[4].innerHTML === 'O' && button[1].innerHTML === 'O')) {
         alert("Victory")
     }
-    else if(button[5].innerHTML === 'O' && button[3].innerHTML === 'O' && button[7].innerHTML === 'O') {
+    else if((button[5].innerHTML === 'O' && button[3].innerHTML === 'O' && button[7].innerHTML === 'O')
+    || (button[7].innerHTML === 'O' && button[3].innerHTML === 'O' && button[5].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[7].innerHTML === 'O' && button[5].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[5].innerHTML === 'O' && button[7].innerHTML === 'O')) {
         alert("Victory")
     }
-    else if(button[0].innerHTML === 'O' && button[7].innerHTML === 'O' && button[8].innerHTML === 'O') {
+    else if((button[0].innerHTML === 'O' && button[3].innerHTML === 'O' && button[8].innerHTML === 'O')
+    || (button[8].innerHTML === 'O' && button[3].innerHTML === 'O' && button[0].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[0].innerHTML === 'O' && button[8].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[8].innerHTML === 'O' && button[0].innerHTML === 'O')) {
         alert("Victory")
     }
-    else if(button[0].innerHTML === 'O' && button[5].innerHTML === 'O' && button[6].innerHTML === 'O') {
-        alert("Victory")
-    }
-    else if(button[6].innerHTML === 'O' && button[3].innerHTML === 'O' && button[2].innerHTML === 'O') {
+    else if((button[6].innerHTML === 'O' && button[3].innerHTML === 'O' && button[2].innerHTML === 'O')
+    || (button[2].innerHTML === 'O' && button[3].innerHTML === 'O' && button[6].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[2].innerHTML === 'O' && button[6].innerHTML === 'O')
+    || (button[3].innerHTML === 'O' && button[6].innerHTML === 'O' && button[2].innerHTML === 'O')) {
         alert("Victory")
     }
 }
